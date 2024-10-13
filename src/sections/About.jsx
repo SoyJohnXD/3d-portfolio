@@ -25,9 +25,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hola mi nombre es John Breyner</p>
               <p className="grid-subtext">
-                Tengo 4 de experiencia, perfeccionando mis habilidades en el
-                desarrollo frontend, enfocandome ahora en sitios web animados y
-                implementando 3D.
+                Tengo +4 años de experiencia, perfeccionando mis habilidades en
+                el desarrollo frontend, enfocándome ahora en sitios web animados
+                y implementando 3D.
               </p>
             </div>
           </div>
@@ -92,10 +92,10 @@ const About = () => {
               className="w-full sm:h-[266px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Mi pasion por el codigo</p>
+              <p className="grid-headtext">Mi pasión por el código</p>
               <p className="grid-subtext">
-                Amo resolver problemas y construir mediante el codigo. Hacer
-                código no es solamente mi profesion es una de mis pasiónes
+                Amo resolver problemas y construir mediante el código. Hacer
+                código no es solamente mi profesión, sino una de mis pasiones.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ const About = () => {
               className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top "
             />
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contactame</p>
+              <p className="grid-subtext text-center">Contáctame</p>
               <div className="copy-container" onClick={handdleCopy}>
                 <img
                   src={hasCopy ? "assets/tick.svg" : "assets/copy.svg"}
