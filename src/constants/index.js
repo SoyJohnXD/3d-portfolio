@@ -177,7 +177,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
     cubePosition: isSmall
-      ? [4, -5, 0]
+      ? [3, -7, 0]
       : isMobile
       ? [5, -5, 0]
       : isTablet
@@ -198,7 +198,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       ? [-12, 10, 0]
       : [-22, 10, 0],
     targetPosition: isSmall
-      ? [-5, -10, -10]
+      ? [-5, -11, -7]
       : isMobile
       ? [-9, -10, -10]
       : isTablet
@@ -211,10 +211,10 @@ export const workExperiences = [
   {
     id: 1,
     name: "CCXC",
-    pos: "Desarrolador Frontend Junior II",
+    pos: "Desarrollador Frontend Junior II",
     duration: "Oct 2022 - Presente",
     title:
-      "Desarrollo y mantenimiento de aplicaciones web utilizando React.js, colaborando con equipos multifuncionales para garantizar la calidad del producto. Implementa diseños responsivos y asegura la compatibilidad entre navegadores, además de participar en revisiones de código para promover la mejora continua dentro del equipo.",
+      "Desarrollo y mantenimiento de aplicaciones web utilizando React.js, colaborando con equipos multifuncionales para garantizar la calidad del producto. Implementación de diseños responsivos y aseguramiento de la compatibilidad entre navegadores, además de participar en revisiones de código para promover la mejora continua dentro del equipo.",
     icon: "/assets/ccxc.svg",
     animation: "victory",
   },
@@ -222,9 +222,9 @@ export const workExperiences = [
     id: 2,
     name: "Intevo S.A.S",
     pos: "Desarrollador FullStack",
-    duration: "Feb 2022 -  Oct 2022",
+    duration: "Feb 2022 - Oct 2022",
     title:
-      "Gestion de páginas web, ecommerce y landing pages, implementando tecnologías como TypeScript, Laravel, VueJs, Nuxtjs, Yi2 y React. Corrección de bugs y mantenimiento, participando activamente en revisiones de código y ofreciendo retroalimentación constructiva a otros desarrolladores.",
+      "Gestión de páginas web, ecommerce y landing pages, implementando tecnologías como TypeScript, Laravel, Vue.js, Nuxt.js, Yii2 y React. Corrección de bugs y mantenimiento, participando activamente en revisiones de código y ofreciendo retroalimentación constructiva a otros desarrolladores.",
     icon: "/assets/intevo.png",
     animation: "clapping",
   },
@@ -234,7 +234,7 @@ export const workExperiences = [
     pos: "Desarrollador y Diseñador Web",
     duration: "Oct 2020 - Feb 2022",
     title:
-      "Gestion de páginas web comerciales y procesos internos, implementando tecnologías como JavaScript, PHP, HTML5, CSS3 y Bootstrap. Optimizacion contenido para mejorar el SEO en Google, estructura bases de datos relacionales con MySQL y diseño de contenido comercial utilizando herramientas de Adobe como Photoshop, Illustrator y After Effects.",
+      "Gestión de páginas web comerciales y procesos internos, implementando tecnologías como JavaScript, PHP, HTML5, CSS3 y Bootstrap. Optimización de contenido para mejorar el SEO en Google, estructuración de bases de datos relacionales con MySQL y diseño de contenido comercial utilizando herramientas de Adobe como Photoshop, Illustrator y After Effects.",
     icon: "/assets/tvco.png",
     animation: "salute",
   },

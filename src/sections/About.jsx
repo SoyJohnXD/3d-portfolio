@@ -40,7 +40,7 @@ const About = () => {
               className="w-full sm:w-[276px] object-contain mx-auto"
             />
             <div>
-              <p className="grid-headtext">Tecgnologias</p>
+              <p className="grid-headtext">Tecnologías</p>
               <p className="grid-subtext">
                 Me especializo en JavaScript/TypeScript y Java/PHP, me enfoco en
                 ecosistemas React y Next.js, aunque puedo adaptarme a cualquier
@@ -95,7 +95,7 @@ const About = () => {
               <p className="grid-headtext">Mi pasion por el codigo</p>
               <p className="grid-subtext">
                 Amo resolver problemas y construir mediante el codigo. Hacer
-                codigo no es solamente mi profesion - es una de mis pasiones
+                código no es solamente mi profesion es una de mis pasiónes
               </p>
             </div>
           </div>
