@@ -80,7 +80,7 @@ const About = () => {
               <p className="grid-subtext">
                 Me ubico en Colombia, disponible para trabajar remotamente.
               </p>
-              <Button name="Contactame" isBeam containerClass="w-full mt-10" />
+              <Button name="Contáctame" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
         </div>
