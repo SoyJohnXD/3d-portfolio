@@ -1,17 +1,19 @@
 import { Canvas } from "@react-three/fiber";
-import { workExperiences } from "../constants";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Suspense, useState } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import Developer from "../components/Developer";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
   const [animationName, setAnimationName] = useState("idle");
+  const { t } = useTranslation();
+  const workExperiences = t("workExperiences", { returnObjects: true });
 
   return (
     <section id="experience" className="max-w-7xl mx-auto c-space my-20">
       <div className="w-full text-white-600">
-        <h3 className="head-text">Experiencia</h3>
+        <h3 className="head-text">{t("experience.title")}</h3>
         <div className="work-container">
           <div className="work-canvas cursor-grab">
             <Canvas>
@@ -33,7 +35,6 @@ const Experience = () => {
                   animationName={animationName}
                   position-y={-3}
                   scale={3}
-                  ad
                 />
               </Suspense>
             </Canvas>
@@ -60,12 +61,14 @@ const Experience = () => {
                       <div className="work-content-bar" />
                     </div>
                     <div className="sm:p-5 px-2.5 py-5">
-                      <p className="font-bold text-white-800">{name}</p>
+                      <p className="font-bold text-white-800">
+                        {t(`experience.jobs.${id}.name`, name)}
+                      </p>
                       <p className="text-sm mb-5">
-                        {pos} -- {duration}
+                        {t(`experience.jobs.${id}.pos`, pos)} -- {duration}
                       </p>
                       <p className="group-hover:text-white transition ease-in-out duration-500">
-                        {title}
+                        {t(`experience.jobs.${id}.title`, title)}
                       </p>
                     </div>
                   </div>

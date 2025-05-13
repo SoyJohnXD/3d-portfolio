@@ -1,0 +1,228 @@
+{
+  "hero": {
+    "greeting": "Hi, my name is John Londoño 👋",
+    "tagline": "FullStack Developer, +4 years of experience.",
+    "cta": "Let's work together"
+  },
+  "about": {
+    "introTitle": "Hi, my name is John Breyner",
+    "introText": "I have over 4 years of experience honing my frontend skills, now focusing on animated websites and 3D implementations.",
+    "techTitle": "Technologies",
+    "techText": "I specialize in JavaScript/TypeScript and Java/PHP, focusing on React and Next.js ecosystems, but I can adapt to any JavaScript-based framework.",
+    "remoteTitle": "I work remotely across the globe",
+    "remoteText": "Based in Colombia, available for remote work.",
+    "contactButton": "Contact Me",
+    "passionTitle": "My passion for code",
+    "passionText": "I love solving problems and building through code. Coding is not just my profession, it’s one of my passions.",
+    "copyLabel": "Contact Me",
+    "email": "johnjulin2@gmail.com"
+  },
+  "navLinks": [
+    { "id": 1, "name": "Home", "href": "#home" },
+    { "id": 2, "name": "About Me", "href": "#about" },
+    { "id": 3, "name": "Experience", "href": "#experience" },
+    { "id": 4, "name": "Projects", "href": "#work" },
+    { "id": 5, "name": "Contact", "href": "#contact" }
+  ],
+  "clients": {
+    "title": "Testimonials",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sediel Ruiz",
+        "position": "Development Manager – Wepayu Latam",
+        "img": "assets/sediel_ruiz.jpg",
+        "review": "John is a professional with great listening and adaptability skills. Whenever we faced a challenge, he proactively proposed solutions and always showed strong commitment to the team’s success. His positive attitude is contagious and makes working with him a pleasure."
+      },
+      {
+        "id": 2,
+        "name": "Diego Chacón",
+        "position": "Fullstack Developer – Intevo",
+        "img": "assets/diego_chacon.jpg",
+        "review": "What I appreciate most about John is his team-oriented approach and his ability to solve complex problems. His clear communication keeps everyone aligned and makes collaboration effortless."
+      },
+      {
+        "id": 3,
+        "name": "John Calderón",
+        "position": "FullStack Developer – CCXC",
+        "img": "assets/jhon_calderon.png",
+        "review": "John leads by example. His quick understanding of team needs and translating them into practical solutions was key to our project. He is reliable and has a strong sense of responsibility."
+      },
+      {
+        "id": 4,
+        "name": "Sebastián Nieto",
+        "position": "Freelance Project",
+        "img": "assets/sebastian_nieto.jpg",
+        "review": "Working with John was an enriching experience. He is technically proficient, highly organized, and always maintains a collaborative attitude. His work ethic and deadline management are exceptional."
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Work",
+    "demo": "Demo",
+    "myProjects": [
+      {
+        "title": "Soportes TV – TV Mounts Sales & Installation",
+        "desc": "An online store focused on selling and installing TV mounts, with modern features and optimized layout.",
+        "subdesc": "This site showcases web technologies like HTML, CSS, JavaScript and Bootstrap to deliver a user experience centered on physical products and installation services.",
+        "href": "https://soportestv.co/",
+        "texture": "/textures/project/soportestvco.mp4",
+        "logo": "/assets/project-logo1.png",
+        "logoStyle": {
+          "backgroundColor": "#2A1816",
+          "border": "0.2px solid #36201D",
+          "boxShadow": "0px 0px 60px 0px #AA3C304D"
+        },
+        "spotlight": "/assets/spotlight1.png",
+        "tags": [
+          {
+            "id": 1,
+            "name": "Html",
+            "path": "/assets/html.svg"
+          },
+          {
+            "id": 2,
+            "name": "JavaScript",
+            "path": "assets/javascript.svg"
+          },
+          {
+            "id": 3,
+            "name": "Bootstrap",
+            "path": "/assets/bootstrap.svg"
+          }
+        ]
+      },
+      {
+        "title": "Work Experiences",
+        "desc": "Throughout my career, I have collaborated on diverse projects, working in teams to develop innovative solutions. My experience ranges from frontend technologies like Vue, React, Nuxt, and TypeScript to backend frameworks like Laravel, Yii, and Java Spring. In every project, I applied my skills to maximize tool potential and ensure team success.",
+        "subdesc": "I have contributed to collaborative projects requiring fluid communication and real-time coordination, adding value in both software architecture and feature implementation.",
+        "href": null,
+        "texture": "/textures/project/experiences.mp4",
+        "logo": "/assets/work.png",
+        "logoStyle": {
+          "backgroundColor": "#13202F",
+          "border": "0.2px solid #17293E",
+          "boxShadow": "0px 0px 60px 0px #2F6DB54D"
+        },
+        "spotlight": "/assets/spotlight2.png",
+        "tags": [
+          {
+            "id": 1,
+            "name": "React.js",
+            "path": "/assets/react.svg"
+          },
+          {
+            "id": 1,
+            "name": "Html",
+            "path": "/assets/html.svg"
+          },
+          {
+            "id": 2,
+            "name": "JavaScript",
+            "path": "assets/javascript.svg"
+          },
+          {
+            "id": 2,
+            "name": "TailwindCSS",
+            "path": "assets/tailwindcss.png"
+          },
+          {
+            "id": 3,
+            "name": "TypeScript",
+            "path": "/assets/typescript.png"
+          }
+        ]
+      },
+      {
+        "title": "Hilink Travel – Outdoor Exploration",
+        "desc": "A travel landing page using modern web technologies for practice and learning. It features offline maps, adventure planning, and AR functions, offering an educational experience for developers and nature enthusiasts.",
+        "subdesc": "Focused on learning, Hilink Travel integrates offline functionality, AR routes, and real-time sharing using React and TypeScript.",
+        "href": "https://hilink-travel-app.netlify.app",
+        "texture": "/textures/project/hilink.mp4",
+        "logo": "/assets/hilink.svg",
+        "logoStyle": {
+          "backgroundColor": "#60f5a1",
+          "background": "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+          "border": "0.2px solid rgba(208, 213, 221, 1)",
+          "boxShadow": "0px 0px 60px 0px rgba(35, 131, 96, 0.3)"
+        },
+        "spotlight": "/assets/spotlight3.png",
+        "tags": [
+          {
+            "id": 1,
+            "name": "React.js",
+            "path": "/assets/react.svg"
+          },
+          {
+            "id": 2,
+            "name": "TailwindCSS",
+            "path": "assets/tailwindcss.png"
+          },
+          {
+            "id": 3,
+            "name": "TypeScript",
+            "path": "/assets/typescript.png"
+          }
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "workExperiences": [
+    {
+      "id": 1,
+      "name": "CCXC",
+      "pos": "Junior Frontend Developer II",
+      "duration": "Oct 2022 – Present",
+      "title": "Developed and maintained web applications using React.js, collaborating with cross-functional teams to ensure product quality. Implemented responsive designs, ensured browser compatibility, and participated in code reviews to foster continuous improvement.",
+      "icon": "/assets/ccxc.svg",
+      "animation": "victory"
+    },
+    {
+      "id": 2,
+      "name": "Intevo S.A.S",
+      "pos": "FullStack Developer",
+      "duration": "Feb 2022 – Oct 2022",
+      "title": "Managed websites, e-commerce and landing pages using TypeScript, Laravel, Vue.js, Nuxt.js, Yii2 and React. Fixed bugs and maintained codebase, actively participating in code reviews and providing constructive feedback.",
+      "icon": "/assets/intevo.png",
+      "animation": "clapping"
+    },
+    {
+      "id": 3,
+      "name": "Soportes TV CO",
+      "pos": "Web Developer & Designer",
+      "duration": "Oct 2020 – Feb 2022",
+      "title": "Oversaw commercial web pages and internal processes using JavaScript, PHP, HTML5, CSS3 and Bootstrap. Optimized content for Google SEO, structured MySQL relational databases, and designed marketing assets with Adobe Photoshop, Illustrator and After Effects.",
+      "icon": "/assets/tvco.png",
+      "animation": "salute"
+    }
+  ],
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "If you're looking to build your website, improve your existing platform, or grow your life project, I'm here to help.",
+    "form": {
+      "name": {
+        "label": "Full Name:",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Email:",
+        "placeholder": "johndoe@example.com"
+      },
+      "message": {
+        "label": "Message:",
+        "placeholder": "Hello, I want to contact you for this job..."
+      }
+    },
+    "button": {
+      "sending": "Sending...",
+      "send": "Send Message"
+    },
+    "alerts": {
+      "success": "Message sent!",
+      "error": "Something went wrong"
+    }
+  }
+}

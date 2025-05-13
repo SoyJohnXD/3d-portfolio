@@ -1,14 +1,17 @@
 import { Suspense, useState } from "react";
-import { myProjects } from "../constants";
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoComputer from "../components/DemoComputer";
-
-const projectCount = myProjects.length;
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [setselectedProjectIndex, setSetselectedProjectIndex] = useState(0);
+
+  const myProjects = t("projects.myProjects", { returnObjects: true });
+  const projectCount = myProjects.length;
+
   const handleNavigation = (direction) => {
     setSetselectedProjectIndex((prevState) => {
       if (direction === "prev") {
@@ -23,7 +26,7 @@ const Projects = () => {
 
   return (
     <section id="work" className="max-w-7xl mx-auto c-space my-20">
-      <p className="head-text">Mi trabajo</p>
+      <p className="head-text">{t("projects.title")}</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">

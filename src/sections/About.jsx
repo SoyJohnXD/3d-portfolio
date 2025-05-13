@@ -1,17 +1,18 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
-import { useState } from "react";
 
 const About = () => {
+  const { t } = useTranslation();
   const [hasCopy, setHasCopy] = useState(false);
-  const handdleCopy = () => {
-    navigator.clipboard.writeText("johnjulin2@gmail.com");
-    setHasCopy(true);
 
-    setTimeout(() => {
-      setHasCopy(false);
-    }, 2000);
+  const handleCopy = () => {
+    navigator.clipboard.writeText(t("about.email"));
+    setHasCopy(true);
+    setTimeout(() => setHasCopy(false), 2000);
   };
+
   return (
     <section className="max-w-7xl mx-auto c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -23,15 +24,12 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Hola mi nombre es John Breyner</p>
-              <p className="grid-subtext">
-                Tengo +4 años de experiencia, perfeccionando mis habilidades en
-                el desarrollo frontend, enfocándome ahora en sitios web animados
-                y implementando 3D.
-              </p>
+              <p className="grid-headtext">{t("about.introTitle")}</p>
+              <p className="grid-subtext">{t("about.introText")}</p>
             </div>
           </div>
         </div>
+
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
@@ -40,18 +38,15 @@ const About = () => {
               className="w-full sm:w-[276px] object-contain mx-auto"
             />
             <div>
-              <p className="grid-headtext">Tecnologías</p>
-              <p className="grid-subtext">
-                Me especializo en JavaScript/TypeScript y Java/PHP, me enfoco en
-                ecosistemas React y Next.js, aunque puedo adaptarme a cualquier
-                framework basado en JavaScript.
-              </p>
+              <p className="grid-headtext">{t("about.techTitle")}</p>
+              <p className="grid-subtext">{t("about.techText")}</p>
             </div>
           </div>
         </div>
+
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] hfit flex justify-center items-center">
+            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
                 height={366}
                 width={366}
@@ -64,9 +59,9 @@ const About = () => {
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 labelsData={[
                   {
-                    lat: 4.644000377642925,
-                    lng: -74.07215412143057,
-                    text: "Estoy Aqui!",
+                    lat: 4.644,
+                    lng: -74.072,
+                    text: t("about.remoteTitle"),
                     color: "white",
                     size: 120,
                   },
@@ -74,16 +69,19 @@ const About = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">
-                Trabajo remotamente en todo el mundo
-              </p>
-              <p className="grid-subtext">
-                Me ubico en Colombia, disponible para trabajar remotamente.
-              </p>
-              <Button name="Contáctame" isBeam containerClass="w-full mt-10" />
+              <p className="grid-headtext">{t("about.remoteTitle")}</p>
+              <p className="grid-subtext">{t("about.remoteText")}</p>
+              <a href="#contact" className="w-fit">
+                <Button
+                  name={t("about.contactButton")}
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
+
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img
@@ -92,30 +90,28 @@ const About = () => {
               className="w-full sm:h-[266px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Mi pasión por el código</p>
-              <p className="grid-subtext">
-                Amo resolver problemas y construir mediante el código. Hacer
-                código no es solamente mi profesión, sino una de mis pasiones.
-              </p>
+              <p className="grid-headtext">{t("about.passionTitle")}</p>
+              <p className="grid-subtext">{t("about.passionText")}</p>
             </div>
           </div>
         </div>
+
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
-              src="assets/grid4.png"
+              src="assets/grid4.webp"
               alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top "
+              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contáctame</p>
-              <div className="copy-container" onClick={handdleCopy}>
+              <p className="grid-subtext text-center">{t("about.copyLabel")}</p>
+              <div className="copy-container" onClick={handleCopy}>
                 <img
                   src={hasCopy ? "assets/tick.svg" : "assets/copy.svg"}
                   alt=""
                 />
-                <p className="lg:text-2xl md:text-xl font font-medium text-gray_gradient text-white">
-                  johnjulin2@gmail.com
+                <p className="lg:text-2xl md:text-xl font-medium text-white">
+                  {t("about.email")}
                 </p>
               </div>
             </div>

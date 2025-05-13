@@ -1,9 +1,12 @@
-import { clientReviews } from "../constants";
+import { useTranslation } from "react-i18next";
 
 const Clients = () => {
+  const { t } = useTranslation();
+  const clientReviews = t("clients.reviews", { returnObjects: true });
+
   return (
     <section id="clients" className="max-w-7xl mx-auto c-space my-20">
-      <h3 className="head-text">Algunos testimonios </h3>
+      <h3 className="head-text">{t("clients.title")}</h3>
       <div className="client-container">
         {clientReviews.map(({ id, name, review, img, position }) => (
           <div key={id} className="client-review">

@@ -1,7 +1,9 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -32,35 +34,30 @@ const Contact = () => {
         import.meta.env.VITE_SECRET_ID
       );
       setLoading(false);
-      alert("Mensaje enviado!");
-      setForm({
-        name: "",
-        email: "",
-        message: "",
-      });
+      alert(t("contact.alerts.success"));
+      setForm({ name: "", email: "", message: "" });
     } catch (error) {
       setLoading(false);
       console.log(error);
-      alert("algo salio mal");
+      alert(t("contact.alerts.error"));
     }
   };
+
   return (
     <section id="contact" className="max-w-7xl mx-auto c-space my-20">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <div className="contact-container">
-          <h3 className="head-text">Hablemos</h3>
-          <p className="text-lg text-white-600 mt-3">
-            Si estas buscando construir tu sitio web, mejorar tu plataforma ya
-            existente, o hacer crecer tu proyecto de vida, Estoy aqui para
-            ayudarte.
-          </p>
+          <h3 className="head-text">{t("contact.title")}</h3>
+          <p className="text-lg text-white-600 mt-3">{t("contact.subtitle")}</p>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="mt-12 flex flex-col space-y-7"
           >
             <label className="space-y-3">
-              <span className="field-label">Nombre completo:</span>
+              <span className="field-label">
+                {t("contact.form.name.label")}
+              </span>
               <input
                 type="text"
                 name="name"
@@ -68,36 +65,39 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="John Doe"
+                placeholder={t("contact.form.name.placeholder")}
               />
             </label>
             <label className="space-y-3">
-              <span className="field-label">Email:</span>
+              <span className="field-label">
+                {t("contact.form.email.label")}
+              </span>
               <input
-                type="text"
+                type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="johndoe@example.com"
+                placeholder={t("contact.form.email.placeholder")}
               />
             </label>
             <label className="space-y-3">
-              <span className="field-label">Mensaje:</span>
+              <span className="field-label">
+                {t("contact.form.message.label")}
+              </span>
               <textarea
-                type="text"
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Hola, te quiero contatar para este trabajo..."
+                placeholder={t("contact.form.message.placeholder")}
               />
             </label>
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? "Enviando..." : "Enviar Mensaje"}
+              {loading ? t("contact.button.sending") : t("contact.button.send")}
               <img
                 src="/assets/arrow-up.png"
                 alt="arrow-up"
